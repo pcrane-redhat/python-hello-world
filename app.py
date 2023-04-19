@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     rand = random()
-    return  rand 
+    return  "hello gain"
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
