@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    rand = random.randint(0,9)
+    rand = 35
     txt = "Hello my random number is {}"
     txt.format(rand)
     return  txt
