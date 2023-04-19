@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "gg ello World! it is I as in AI now lets see if the webhook works"
+    return "gg hello World! it is I as in AI now lets see if the webhook works"
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
