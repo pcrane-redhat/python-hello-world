@@ -12,6 +12,7 @@ def hello():
     txt.format(rand)
     return  txt
 
+
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
     port = int(port)
