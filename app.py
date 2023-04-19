@@ -7,8 +7,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    myStr = "Hello again from" + random.randint(0,9)
-    return  myStr
+    rand = random.randint(0,9)
+    txt = "Hello my random number is {}"
+    txt.format(rand)
+    return  txt
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
