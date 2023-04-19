@@ -1,11 +1,13 @@
 from flask import Flask
 import os
+import random
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "gg hello World! it is I as in AI now lets see if the webhook works"
+    rand = random()
+    return "hello World! " rand "is the number"
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
